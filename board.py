@@ -25,5 +25,3 @@ def setup(Pins):
     GPIO.setmode(GPIO.BOARD)
     for pin in Pins:
         configure_pin(pin)
-
-setup(Pins)

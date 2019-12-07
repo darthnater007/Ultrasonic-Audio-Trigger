@@ -13,8 +13,8 @@ class Pin:
             )
 
 #define pins here
-trig_pin = Pin("trig_pin", 36, "out")
-echo_pin = Pin("echo_pin", 37, "in")
+trig_pin = Pin("trig_pin", 22, "out")
+echo_pin = Pin("echo_pin", 11, "in")
 
 #list of pins for setup
 Pins = [trig_pin,echo_pin]
