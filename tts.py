@@ -15,5 +15,3 @@ def play_audio():
     my_object = gTTS(text=my_text, lang='en', slow=False) 
     my_object.save("./audio/audio.mp3")
     os.system("mpg123 ./audio/audio.mp3")
-
-play_audio()
