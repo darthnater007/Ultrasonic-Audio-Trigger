@@ -13,5 +13,5 @@ def get_phrase():
 def play_audio():
     my_text = get_phrase()
     my_object = gTTS(text=my_text, lang='en', slow=False) 
-    my_object.save("./audio/audio.mp3")
-    os.system("mpg123 ./audio/audio.mp3")
+    my_object.save("/home/pi/Ultrasonic_Audio_Trigger/audio/audio.mp3")
+    os.system("mpg123 /home/pi/Ultrasonic_Audio_Trigger/audio/audio.mp3")
