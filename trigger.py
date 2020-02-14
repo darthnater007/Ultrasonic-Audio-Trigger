@@ -5,7 +5,7 @@ import time
 import pin
 trig_pin = pin.trig_pin.number
 echo_pin = pin.echo_pin.number
-import tts
+import audio
 
 max_distance = 150
 min_distance = 5
@@ -40,7 +40,7 @@ def run_ultrasonic_trigger():
         distance = get_distance()
         print(str(distance))
         if distance > min_distance and distance <= trigger_distance:
-            tts.play_audio()
+            audio.play_audio()
             print("TRIGGERED!")
             time.sleep(10)
         time.sleep(1)
