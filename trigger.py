@@ -8,11 +8,11 @@ import audio
 trig_pin_number = pin.trig_pin.number
 echo_pin_number = pin.echo_pin.number
 
-max_distance = 150 #cm
-min_distance = 5 #cm
-trigger_distance = 30 #cm  
+max_distance = 150.0 #cm
+min_distance = 5.0 #cm
+trigger_distance = 30.0 #cm  
 
-SPEED_OF_SOUND = 34300 #cm/s
+SPEED_OF_SOUND = 34300.0 #cm/s
 TIME_OUT = max_distance / SPEED_OF_SOUND
 
 # get_pulse_timemeasures how long in seconds a delivered pulse takes to return to the rangerfinder
