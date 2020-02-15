@@ -8,10 +8,8 @@ import board
 import pin
 import trigger
 
-Pins = pin.Pins
-
 if __name__ == '__main__':
-    board.setup(Pins)
+    board.setup(pin.Pins)
     try:
         trigger.run_ultrasonic_trigger()
     except KeyboardInterrupt:  #when 'Ctrl+C' is pressed, the program will exit
