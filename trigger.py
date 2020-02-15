@@ -16,7 +16,7 @@ SPEED_OF_SOUND = 34300 #cm/s
 TIME_OUT = max_distance * 60 * 0.00001 # sec
 
 # get_pulse_timemeasures how long in seconds a delivered pulse takes to return to the rangerfinder
-def get_pulse_time(pin_number,level):
+def get_pulse_time(pin,level):
     t0 = time.time()
     while(GPIO.input(pin) != level):
         if((time.time() - t0) > TIME_OUT):
