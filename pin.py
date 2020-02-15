@@ -13,7 +13,7 @@ class Pin:
             "\tIO state: " + self.in_out + "\n\n"
             )
 
-trig_pin = Pin("trig_pin", 11, "out"),
+trig_pin = Pin("trig_pin", 11, "out")
 echo_pin = Pin("echo_pin", 16, "in")
 
 Pins = [trig_pin,echo_pin]
