@@ -31,7 +31,7 @@ def get_pulse_time(pin,level):
 # return the distance traveled one way by the pulse
 def get_distance():
     activate_rangefinder()
-    distance = get_pulse_time(echo_pin_number),GPIO.HIGH) * SPEED_OF_SOUND / 2.0 
+    distance = get_pulse_time(echo_pin_number,GPIO.HIGH) * SPEED_OF_SOUND / 2.0 
     #divide by two because sound travels from and back to the rangefinder
     return distance
 
