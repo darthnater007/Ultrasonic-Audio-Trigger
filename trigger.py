@@ -13,10 +13,10 @@ min_distance = 5 #cm
 trigger_distance = 30 #cm  
 
 SPEED_OF_SOUND = 34300 #cm/s
-TIME_OUT = max_distance * 60 * 0.00001
+TIME_OUT = max_distance * 60 * 0.00001 # sec
 
-# get_pulse_timemeasures how long in milliseconds a delivered pulse takes to return to the rangerfinder
-def get_pulse_time(pin,level):
+# get_pulse_timemeasures how long in seconds a delivered pulse takes to return to the rangerfinder
+def get_pulse_time(pin_number,level):
     t0 = time.time()
     while(GPIO.input(pin) != level):
         if((time.time() - t0) > TIME_OUT):
@@ -26,6 +26,7 @@ def get_pulse_time(pin,level):
         if((time.time() - t0) > TIME_OUT):
             return 0.0
     pulse_time = (time.time() - t0)
+    print(pulse_time, " seconds")
     return pulse_time
 
 # return the distance traveled one way by the pulse
