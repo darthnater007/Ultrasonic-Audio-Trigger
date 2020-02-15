@@ -13,7 +13,7 @@ min_distance = 5.0 #cm
 trigger_distance = 30.0 #cm  
 
 SPEED_OF_SOUND = 34300.0 #cm/s
-TIME_OUT = max_distance / SPEED_OF_SOUND
+TIME_OUT = (max_distance * 2) / SPEED_OF_SOUND
 
 # get_pulse_timemeasures how long in seconds a delivered pulse takes to return to the rangerfinder
 def get_pulse_time(pin,level):
